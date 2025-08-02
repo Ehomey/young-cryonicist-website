@@ -1,6 +1,10 @@
 .hero-section {
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+    background: url('https://via.placeholder.com/1920x600/000000/FFFFFF?text=Young+Cryonicists+Meeting') no-repeat center center;
     background-size: cover;
     padding: 100px 0;
+    min-height: 400px; /* Ensure enough height for the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
