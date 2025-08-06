@@ -1,0 +1,76 @@
+/* SponsorsPage.css */
+.sponsors-page .display-4 {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.sponsors-page .lead {
+    font-size: 1.2rem;
+    color: var(--text-color-dark);
+}
+
+.sponsors-page .tier-title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.sponsors-page .tier-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    border-radius: 3px;
+}
+
+.sponsors-page .platinum-title::after {
+    background-color: #e5e4e2; /* Platinum color */
+}
+
+.sponsors-page .gold-title::after {
+    background-color: #ffd700; /* Gold color */
+}
+
+.sponsors-page .silver-title::after {
+    background-color: #c0c0c0; /* Silver color */
+}
+
+.sponsors-page .sponsor-logo {
+    max-height: 180px; /* Slightly larger logos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.sponsors-page .sponsor-logo-sm {
+    max-height: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.sponsors-page .sponsor-logo:hover, .sponsors-page .sponsor-logo-sm:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px var(--shadow-medium);
+}
+
+.sponsors-page .btn-outline-primary {
+    border-radius: 8px;
+    padding: 0.6rem 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.sponsors-page .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+}

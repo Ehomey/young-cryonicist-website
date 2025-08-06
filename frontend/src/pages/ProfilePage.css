@@ -1,0 +1,37 @@
+/* ProfilePage.css */
+.profile-page {
+    background-color: var(--background-light);
+    padding: 2rem 0;
+}
+
+.profile-page .profile-avatar {
+    border: 5px solid var(--text-color-light);
+    box-shadow: 0 5px 15px var(--shadow-medium);
+    border-radius: 50%;
+}
+
+.profile-page .h4 {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.profile-page .card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-page .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--shadow-medium);
+}
+
+.profile-page .card-title {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.profile-page .list-group-item {
+    color: var(--text-color-dark);
+}

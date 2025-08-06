@@ -1,13 +1,202 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* index.css - Global styles and imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import './Global.css';
+
+/* Bootstrap customizations */
+:root {
+  --bs-blue: var(--accent-purple);
+  --bs-primary: var(--accent-purple);
+  --bs-border-radius: var(--border-radius);
+  --bs-border-radius-lg: var(--border-radius-large);
+  --bs-border-radius-xl: var(--border-radius-large);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Override Bootstrap components */
+.btn {
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary-gradient);
+  border: none;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--accent-purple);
+  color: var(--accent-purple);
+}
+
+.btn-outline-primary:hover {
+  background: var(--accent-purple);
+  border-color: var(--accent-purple);
+}
+
+/* Card overrides */
+.card {
+  border: 1px solid var(--border-card);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Form overrides */
+.form-control {
+  border: 2px solid var(--border-card);
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+/* Badge overrides */
+.badge {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+}
+
+.bg-secondary {
+  background: var(--accent-gradient) !important;
+}
+
+/* Alert overrides */
+.alert {
+  border: none;
+  border-radius: var(--border-radius);
+  border-left: 4px solid;
+}
+
+.alert-primary {
+  background: rgba(139, 92, 246, 0.1);
+  border-left-color: var(--accent-purple);
+  color: var(--accent-purple);
+}
+
+/* Navbar overrides */
+.navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Table overrides */
+.table {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.table thead th {
+  background: var(--light-blue);
+  border: none;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Modal overrides */
+.modal-content {
+  border: none;
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow-strong);
+}
+
+.modal-header {
+  background: var(--light-blue);
+  border-bottom: 1px solid var(--border-card);
+}
+
+/* Tooltip and Popover overrides */
+.tooltip-inner {
+  background: var(--deep-blue);
+  border-radius: var(--border-radius);
+}
+
+.popover {
+  border: none;
+  box-shadow: var(--shadow-medium);
+  border-radius: var(--border-radius);
+}
+
+/* Utility classes */
+.text-gradient {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-primary {
+  background: var(--primary-gradient);
+}
+
+.bg-gradient-secondary {
+  background: var(--secondary-gradient);
+}
+
+.bg-gradient-accent {
+  background: var(--accent-gradient);
+}
+
+.shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+.shadow-medium {
+  box-shadow: var(--shadow-medium);
+}
+
+.shadow-strong {
+  box-shadow: var(--shadow-strong);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .btn,
+  .footer {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
 }

@@ -1,0 +1,55 @@
+/* ForumPage.css */
+.forum-page .display-5 {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.forum-page .card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forum-page .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--shadow-medium);
+}
+
+.forum-page .list-group-item {
+    padding: 1.5rem;
+    transition: background-color 0.2s ease-in-out;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.forum-page .list-group-item:last-child {
+    border-bottom: none;
+}
+
+.forum-page .list-group-item:hover {
+    background-color: var(--background-light);
+}
+
+.forum-page .h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.forum-page .h5:hover {
+    text-decoration: underline !important;
+}
+
+.forum-page .btn-primary {
+    border-radius: 8px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.forum-page .btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+}

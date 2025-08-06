@@ -1,0 +1,61 @@
+/* RegisterPage.css */
+.register-page {
+    background-color: var(--background-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px); /* Adjust based on navbar height */
+}
+
+.register-page .card {
+    border-radius: 12px;
+    box-shadow: 0 10px 25px var(--shadow-medium);
+    border: none;
+}
+
+.register-page .form-control-user {
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border-color);
+}
+
+.register-page .form-control-user:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--primary-color-rgb), 0.25);
+    border-color: var(--primary-color);
+}
+
+.register-page .btn-user {
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.register-page .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.register-page .btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+}
+
+.register-page .btn-google {
+    color: white;
+    background-color: #ea4335;
+}
+
+.register-page .btn-google:hover {
+    background-color: darken(#ea4335, 10%);
+}
+
+.register-page .btn-facebook {
+    color: white;
+    background-color: #3b5998;
+}
+
+.register-page .btn-facebook:hover {
+    background-color: darken(#3b5998, 10%);
+}

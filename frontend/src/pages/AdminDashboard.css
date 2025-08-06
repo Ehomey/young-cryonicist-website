@@ -1,0 +1,36 @@
+/* AdminDashboard.css */
+.admin-dashboard {
+    background-color: var(--background-light);
+    padding: 2rem 0;
+}
+
+.admin-dashboard h1 {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.admin-dashboard .card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-dashboard .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--shadow-medium);
+}
+
+.admin-dashboard .card-header {
+    background-color: var(--dark-color);
+    color: var(--text-color-light);
+    font-weight: 600;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 1rem 1.5rem;
+}
+
+.admin-dashboard .list-group-item {
+    color: var(--text-color-dark);
+}
