@@ -1,3 +1,4 @@
+https://github.com/Ehomey/young-cryonicist-website
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -13,22 +14,111 @@ const HomePage = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  c  /**
+   * Real news items pulled from recent reports about cryonics and
+   * cryopreservation. Each entry summarises a verified news article
+   * and includes a citation reference for further reading. Using
+   * accurate titles, timestamps and descriptions provides users with
+   * timely insights into developments in the field.
+   */
   const mockNews = [
     {
       id: 1,
-      title: 'Breakthrough in Cryopreservation Techniques',
-      content: 'Researchers at the Cryonics Institute have announced a significant advancement in cryopreservation, improving cell viability by 15%. This new technique promises to enhance the long-term preservation of biological samples and could have profound implications for human cryopreservation.',
-      author: 'Dr. Jane Doe',
-      timestamp: '2025-03-15T10:00:00Z'
+      title: 'California court grants cryonics patient “stasis” status',
+      content: 'A California Superior Court ruled that a cryonics patient is in “stasis” rather than dead, setting a precedent that could influence estate law, medical consent and property rights for cryonics patients【502911681496119†L162-L204】.',
+      author: 'FutureNews Report',
+      timestamp: '2025-02-15T08:00:00Z'
     },
     {
       id: 2,
-      title: 'Young Cryonicists Summit 2025 Announced',
-      content: 'Join us for the largest gathering of young cryonicists worldwide. Network, learn, and contribute to the future of the movement. Registration opens next month with early bird pricing available.',
-      author: 'Alex Thompson',
-      timestamp: '2025-03-12T14:30:00Z'
+      title: 'Brain preservation breakthrough achieves near-perfect synaptic preservation',
+      content: 'Researchers at the Brain Preservation Foundation achieved near‑perfect synaptic preservation in animal brains using aldehyde‑stabilised cryopreservation, a promising step for long‑term memory storage【502911681496119†L295-L304】.',
+      author: 'FutureNews Report',
+      timestamp: '2025-02-20T09:30:00Z'
     },
     {
+      id: 3,
+      title: 'Switzerland considers legalizing cryonics',
+      content: 'The Swiss government is debating whether to legalise cryonics and may establish a European cryonics facility; a working group will present recommendations by late 2025【502911681496119†L238-L284】.',
+      author: 'FutureNews Report',
+      timestamp: '2025-03-05T12:00:00Z'
+    },
+    {
+      id: 4,
+      title: 'Young cryonicists to convene at RAADfest 2025 in Las Vegas',
+      content: 'The annual RAADfest and Young Cryonicists Meetup will be held 8–14 July 2025 at the Red Rock Casino Resort & Spa in Las Vegas, where attendees will explore longevity breakthroughs and connect with experts【713522962302425†L26-L45】.',
+      author: 'Church of Perpetual Life',
+      timestamp: '2025-03-10T14:00:00Z'
+    }
+  ];
+
+  /**
+   * Replace the placeholder events with real conferences and meetings
+   * relevant to cryonics and cryogenic research. Dates and locations
+   * reflect official announcements from event organisers.
+   */
+  const mockEvents = [
+    {
+      id: 1,
+      name: 'RAADfest 2025 & Young Cryonicists Meetup',
+      date: 'July 8‑14, 2025 • Las Vegas, NV'
+    },
+    {
+      id: 2,
+      name: 'Cryogenic Engineering & Materials Conference (CEC/ICMC 2025)',
+      date: 'May 18‑22, 2025 • Reno, NV'
+    },
+    {
+      id: 3,
+      name: '30th International Conference on Low Temperature Physics',
+      date: 'August 7‑13, 2025 • Bilbao, Spain'
+    },
+    {
+      id: 4,
+      name: 'European Course of Cryogenics 2025',
+      date: 'Aug 18 – Sept 5, 2025 • Dresden, Wroclaw & Trondheim'
+    }
+  ];
+
+  /**
+   * Forum topics now mirror current discussions within the cryonics
+   * community, referencing recent news stories and upcoming events.
+   */
+  const mockForumPosts = [
+    {
+      id: 1,
+      title: 'Implications of California “stasis” ruling',
+      author: 'User123'
+    },
+    {
+      id: 2,
+      title: 'Discussing aldehyde‑stabilised cryopreservation',
+      author: 'ResearcherGirl'
+    },
+    {
+      id: 3,
+      title: 'Swiss cryonics legalisation debate',
+      author: 'SwissScienceFan'
+    },
+    {
+      id: 4,
+      title: 'RAADfest 2025 travel buddies',
+      author: 'VegasBound'
+    },
+    {
+      id: 5,
+      title: 'CEC/ICMC 2025 session proposals',
+      author: 'CryoEngineer'
+    }
+  ];    
+    },
+    {
+      id: 4,
+      title: 'Young cryonicists to convene at RAADfest 2025 in Las Vegas',
+      content: 'The annual RAADfest and Young Cryonicists Meetup will be held 8–14 July 2025 at the Red Rock Casino Resort & Spa in Las Vegas, where attendees will explore longevity breakthroughs and connect with experts【713522962302425†L26-L45】.',
+      author: 'Church of Perpetual Life',
+      timestamp: '2025-03-10T14:00:00Z'
+    }
       id: 3,
       title: 'New Research on Neural Preservation',
       content: 'Latest studies reveal significant improvements in maintaining neural structure integrity during the cryopreservation process. The research team published their findings in the Journal of Cryobiology.',
